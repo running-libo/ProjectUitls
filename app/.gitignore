@@ -1,1 +1,22 @@
-/build
+*.iml
+
+# Gradle directory
+.gradle/
+build/
+
+#built application files
+*.dex
+*.apk
+
+# Java class files
+*.class
+
+# Local configuration file (sdk ndk path)
+local.properties
+
+.idea/
+
+# OSX files
+.DS_Store
+captures/
+.externalNativeBuild
