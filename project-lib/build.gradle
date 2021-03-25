@@ -35,3 +35,53 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 }
+
+
+group 'com.example.project_lib'
+version '0.0.1'
+def artifactId = '1'
+
+apply plugin: 'maven'
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            repository(url: 'https://packages.aliyun.com/maven/repository/2088958-release-NjyZEe/') {
+                authentication(
+                        userName: '605c8c634639bfa6ebf357c5',
+                        password: '0j)7TdpkQy6B'
+                )
+            }
+            snapshotRepository(url: 'https://packages.aliyun.com/maven/repository/2088958-snapshot-Svd6Nt/') {
+                authentication(
+                        userName: '605c8c634639bfa6ebf357c5',
+                        password: '0j)7TdpkQy6B'
+                )
+            }
+            pom.version = '$project.version'
+            pom.artifactId = '$artifactId'
+            pom.groupId = '$project.group'
+        }
+    }
+}
+
+allprojects {
+    repositories {
+        maven {
+            url 'https://maven.aliyun.com/repository/public'
+        }
+        maven {
+            credentials {
+                username '605c8c634639bfa6ebf357c5'
+                password '0j)7TdpkQy6B'
+            }
+            url 'https://packages.aliyun.com/maven/repository/2088958-release-NjyZEe/'
+        }
+        maven {
+            credentials {
+                username '605c8c634639bfa6ebf357c5'
+                password '0j)7TdpkQy6B'
+            }
+            url 'https://packages.aliyun.com/maven/repository/2088958-snapshot-Svd6Nt/'
+        }
+    }
+}

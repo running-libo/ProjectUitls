@@ -1,4 +1,4 @@
-package com.example.project_lib;
+package com.example.projectlib;
 
 import android.app.Activity;
 import android.os.Bundle;

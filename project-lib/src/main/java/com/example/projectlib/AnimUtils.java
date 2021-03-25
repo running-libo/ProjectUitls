@@ -1,4 +1,4 @@
-package com.example.project_lib;
+package com.example.projectlib;
 
 import android.animation.ObjectAnimator;
 import android.view.View;
