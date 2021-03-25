@@ -1,1 +1,2 @@
+include ':project-lib'
 include ':app'

@@ -1,4 +1,4 @@
-﻿package com.example.projectutils.projectutils;
+﻿package com.example.project_lib;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;

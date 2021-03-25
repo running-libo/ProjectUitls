@@ -1,4 +1,4 @@
-package com.example.projectutils.projectutils;
+package com.example.project_lib;
 
 import android.content.Context;
 import android.view.inputmethod.InputMethodManager;

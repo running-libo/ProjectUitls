@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ProjectUitls.iml" filepath="$PROJECT_DIR$/.idea/modules/ProjectUitls.iml" group="ProjectUitls" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ProjectUitls-app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ProjectUitls-app.iml" group="ProjectUitls/app" />
-      <module fileurl="file://$PROJECT_DIR$/ProjectUtils2.iml" filepath="$PROJECT_DIR$/ProjectUtils2.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ProjectUitls.iml" filepath="$PROJECT_DIR$/.idea/modules/ProjectUitls.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ProjectUitls.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ProjectUitls.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/project-lib/ProjectUitls.project-lib.iml" filepath="$PROJECT_DIR$/.idea/modules/project-lib/ProjectUitls.project-lib.iml" />
     </modules>
   </component>
 </project>
