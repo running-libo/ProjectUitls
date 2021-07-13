@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.library'
 }
+apply plugin: 'kotlin-android'
 
 android {
     compileSdkVersion 30
@@ -33,49 +34,8 @@ dependencies {
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 }
-
-apply plugin: 'maven'
-uploadArchives {
-    repositories {
-        mavenDeployer {
-            repository(url: 'https://packages.aliyun.com/maven/repository/2088958-release-NjyZEe/') {
-                authentication(
-                        userName: '605c8c634639bfa6ebf357c5',
-                        password: '0j)7TdpkQy6B'
-                )
-            }
-            snapshotRepository(url: 'https://packages.aliyun.com/maven/repository/2088958-snapshot-Svd6Nt/') {
-                authentication(
-                        userName: '605c8c634639bfa6ebf357c5',
-                        password: '0j)7TdpkQy6B'
-                )
-            }
-            pom.version = '1.0.0'
-            pom.artifactId = 'projectlib'
-            pom.groupId = 'com.libo'
-        }
-    }
-}
-
-allprojects {
-    repositories {
-        maven {
-            url 'https://maven.aliyun.com/repository/public'
-        }
-        maven {
-            credentials {
-                username '605c8c634639bfa6ebf357c5'
-                password '0j)7TdpkQy6B'
-            }
-            url 'https://packages.aliyun.com/maven/repository/2088958-release-NjyZEe/'
-        }
-        maven {
-            credentials {
-                username '605c8c634639bfa6ebf357c5'
-                password '0j)7TdpkQy6B'
-            }
-            url 'https://packages.aliyun.com/maven/repository/2088958-snapshot-Svd6Nt/'
-        }
-    }
+repositories {
+    mavenCentral()
 }
